@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="5.0dip" android:weightSum="1.0" android:layout_weight="0.05">
+        <ImageButton android:id="@+id/layout_item_save_button" android:background="@null" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_content_save_green" android:layout_weight="0.2" android:onClick="onSave" />
+        <ImageButton android:id="@+id/layout_item_remove_button" android:background="@null" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_navigation_cancel_green" android:layout_weight="0.2" android:onClick="onCancel" />
+        <ImageButton android:id="@+id/pick_color" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_image_color_lens_green" android:layout_weight="0.2" android:onClick="onPickColor" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.3" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/hint" android:gravity="top" android:layout_gravity="center_horizontal" android:id="@+id/textView" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Today" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/hint" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/add_item_time" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10:00 PM" />
+    </LinearLayout>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <EditText android:id="@+id/add_item_et_title" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="4.0dip" android:hint="Title" android:layout_weight="0.1" />
+    <EditText android:gravity="top" android:id="@+id/add_item_et_text" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="4.0dip" android:hint="Content" android:layout_weight="0.8" android:inputType="textMultiLine" />
+</LinearLayout>

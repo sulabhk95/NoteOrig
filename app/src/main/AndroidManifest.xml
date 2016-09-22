@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.sulabhkumar.noteorig" >
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <application android:allowBackup="true"  android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.example.sulabhkumar.noteorig.MainActivity"/>
+        <activity android:name="com.example.sulabhkumar.noteorig.AddItemActivity"/>
+        <activity android:name="com.example.sulabhkumar.noteorig.EditItemActivity"/>
+        <activity android:label="@string/title_activity_reminder" android:name="com.example.sulabhkumar.noteorig.ReminderActivity" android:theme="@android:style/Theme.Dialog"/>
+        <service android:name="com.example.sulabhkumar.noteorig.Reminders.ScheduleService"/>
+        <service android:name="com.example.sulabhkumar.noteorig.Reminders.NotifyService"/>
+        <activity android:label="Edit Reminder" android:name="com.example.sulabhkumar.noteorig.EditRemindersActivity"/>
+        <activity android:label="about_screen" android:name="com.example.sulabhkumar.noteorig.AboutScreenActivity"/>
+        <activity android:label="activity_settings" android:name="com.example.sulabhkumar.noteorig.SettingsActivity"/>
+        <activity android:label="@string/app_name" android:name="com.example.sulabhkumar.noteorig.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

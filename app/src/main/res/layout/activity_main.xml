@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@+id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0" android:animateLayoutChanges="true">
+        <include android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.08" layout="@layout/actionbar" />
+        <ListView android:layout_gravity="center" android:id="@android:id/list" android:padding="16.0dip" android:scrollbars="none" android:layoutAnimation="@anim/list_layout_controller" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@null" android:dividerHeight="10.0dip" android:layout_weight="0.82" android:animateLayoutChanges="true" />
+        <include android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.1" layout="@layout/bottombar" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="left" android:orientation="vertical" android:background="@drawable/nav_bar_bg" android:layout_width="270.0dip" android:layout_height="fill_parent" android:weightSum="1.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.4">
+            <TextView android:textSize="40.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Note" android:fontFamily="sans-serif-medium" />
+            <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="a simple utility app" android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="270.0dip" android:layout_height="0.0dip" android:layout_weight="0.6">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:onClick="settingsPressed">
+                <ImageView android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_action_settings_white" />
+                <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Settings" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:onClick="editRemindersPressed">
+                <ImageView android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_edit_reminder_white" />
+                <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Edit Reminders" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:onClick="aboutPressed">
+                <ImageView android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_about_white" />
+                <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="About" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
